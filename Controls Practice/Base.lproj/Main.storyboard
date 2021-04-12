@@ -100,6 +100,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="FYv-DV-7Kp" appends="YES" id="PqC-Yd-bk1"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="button" destination="4Hc-sT-m3B" id="kVU-mL-gjW"/>
@@ -116,6 +120,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="FYv-DV-7Kp">
+                    <connections>
+                        <action selector="screenTapped:" destination="BYZ-38-t0r" id="ZA5-b5-t4h"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
